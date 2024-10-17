@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,135 +7,54 @@
     <title>Clone Disney+</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+                <img class="header__logo" src="./dist/images/favicon.ico" alt="Disney+">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assine agora</a>
+                    <a href="#" class="button button--secondary">Assista agora</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button button--dark">Entrar</a>
+                    <a href="#sobre" class="button button--dark">Sobre</a>
                 </li>
             </ul>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
             </div>
-            <h3 class="title--small">
-                Venha na Disney+ conhecer a minha saga favorita Os Vingadores, confira abaixo todos os filmes e as fases.
-            </h3>
+        </div>
+    </section>
+
+    <section class="shows" id="sobre">
+        <div class="shows__container">
+            <h1>Homem de Ferro 1</h1>
             <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
+                Homem de Ferro é o filme que deu início ao Universo Cinematográfico da Marvel (MCU), dirigido por Jon Favreau e estrelado por Robert Downey Jr. como Tony Stark, um bilionário, gênio da tecnologia e playboy carismático. A trama segue a jornada de transformação pessoal de Stark, que começa como um empresário arrogante e indiferente aos impactos de sua empresa, a Stark Industries, fabricante de armas, até sua eventual redenção como o super-herói Homem de Ferro.
                 <br>
-                <span class="text">
-                    R$ 27,90/mês o R$ 279,90/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">
-                *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+                <br>
+                A história começa com Tony Stark sendo sequestrado por um grupo terrorista no Afeganistão, após demonstrar a eficácia de suas novas armas de destruição em massa. Gravemente ferido no ataque, Stark é mantido prisioneiro e forçado a construir um míssil para seus captores. No entanto, em segredo, ele cria uma armadura improvisada para escapar, com a ajuda de Yinsen, um prisioneiro que o ajuda a sobreviver e o inspira a mudar sua vida. Essa experiência traumática faz com que Stark questione sua responsabilidade na criação de armas.
+                <br>
+                <br>
+                Após retornar aos Estados Unidos, Tony decide parar de fabricar armas, o que causa conflitos dentro de sua empresa, especialmente com seu sócio e mentor, Obadiah Stane (Jeff Bridges), que secretamente tem planos para tomar o controle da Stark Industries. Em segredo, Stark começa a trabalhar em uma nova e avançada versão da armadura, mais tecnológica e poderosa, que lhe permite voar e combater inimigos de maneira eficaz. Esse traje se torna o famoso uniforme do Homem de Ferro.
             </p>
         </div>
     </section>
-    <section class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="fase_1" class="shows__tabs__button shows__tabs__button--is-active">
-                Fase 1
-            </button>
-            <button data-tab-button="fase_2" class="shows__tabs__button">
-                Fase 2
-            </button>
-            <button data-tab-button="fase_3" class="shows__tabs__button">
-                Fase 3
-            </button>
-        </nav>
-        <ul data-tab-id="fase_1" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="./dist/images/homem de ferro1.png" alt="homem de ferro 1">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/homem de ferro 2.png" alt="homem de ferro 2">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/hulk.jpeg" alt="O Incrivel hulk">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/thor 1.jpg" alt="Thor">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/capitao america.jpg" alt="Capitão América">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/vingadores filme.jpg" alt="Os vingadores">
-            </li>
-        </ul>
-        <ul data-tab-id="fase_2" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/homem de ferro3.jpg" alt="homem de ferro 3">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/thor2.jpg" alt="Thor o mundo sombrio">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/capitaoamerica_2.jpg" alt="Capitão América soldado invernal">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/guardioesdagalaxia.jpg" alt="Guardiões da Galáxia">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/vingadoresultron.jpg" alt="Os Vingadores a era de ultron">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/homemformiga.jpg" alt="Homem Formiga">
-            </li>
-        </ul>
-        <ul data-tab-id="fase_3" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/guerracivil.jpg" alt="Capitão América: Guerra Civil">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/doutorestranho.jpg" alt="Doutor Estranho">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/guardioesdagalaxia2.jpg" alt="Guardiões da Galáxia 2">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/thorragnarok.jpg" alt="Thor: Ragnarok">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/panteranegra.jpg" alt="Pantera Negra">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/homemaranha.jpg" alt="Homem Aranha: de volta ao lar">
-            </li>
-        </ul>
-    </section>
+
     <section class="plans">
-        <h2 class="title--big">Escolha seu plano</h2>
+        <h2 class="tittle--big">Assine Disney+ para assistir este filme e muito mais!</h2>
         <ul class="plans__list">
             <li class="plans__list__item">
                 <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
                 <strong class="title--small">R$ 27,90/mês*</strong>
                 <p class="text--big">
-                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicas inesquecíveis.
                 </p>
                 <button class="button">Assine agora</button>
             </li>
@@ -160,29 +79,38 @@
             *O preço pode variar caso a assinatura seja feita através de outras plataformas.
         </p>
     </section>
+
     <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, tablet e celular">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV e outros">
         <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+            <h2 class="title">
+                Assista do seu jeito
+            </h2>
             <p class="text--big">
                 Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
             </p>
         </div>
     </section>
+
     <section class="image-text-section image-text-section--image-full-width">
         <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
             <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
         </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
+            <h2 class="title">
+                Baixe filmes e séries
+            </h2>
             <p class="text--big">
                 Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
             </p>
         </div>
     </section>
+
     <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <h2 class="title">
+            Disponível nos seus dispositivos favoritos
+        </h2>
         <ul class="available-devices__list">
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/computador.png" alt="Computador">
@@ -228,31 +156,32 @@
             </li>
         </ul>
     </section>
+
     <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Resposta
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Resposta
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Resposta
                 </div>
             </li>
         </ul>
@@ -260,7 +189,7 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Logo">
             <ul class="footer__links">
                 <li class="footer__links__item">
                     <div class="language-selector">
@@ -299,10 +228,11 @@
                 ® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
             </p>
             <p class="text--small">
-                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
             </p>
         </div>
     </footer>
+
     <script src="./dist/js/main.js"></script>
 </body>
 </html>
