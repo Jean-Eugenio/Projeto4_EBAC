@@ -2,7 +2,7 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
-@use 'available-devices'; 
+@use 'available-devices';
 @use 'faq';
 @use 'footer';
 @use 'header';
@@ -37,9 +37,15 @@ body {
     color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 40px) {
+@mixin title($fontSize: 28px) {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario;
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
 }
 
 .text--big {
@@ -62,14 +68,8 @@ body {
     @include text(12px);
 
     @media (max-width: 768px) {
-        @include text(11px);
+        @include text(24px);
     }
-}
-
-.link-text {
-    @include text(18px);
-    color: variaveis.$corTextoSecundario;
-    text-decoration: underline
 }
 
 .title--big {
@@ -94,7 +94,7 @@ body {
     @media (max-width: 768px) {
         @include title(22px);
     }
-} 
+}
 
 .button {
     display: flex;
@@ -110,15 +110,15 @@ body {
     text-decoration: none;
     padding: 8px 14px;
     letter-spacing: 1px;
-    border: 1px solid  variaveis.$corDeFundoBotaoPrimario;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
     }
 
     &--secondary {
-        background-color: variaveis.$corDeFundoBotaoSecundario;
-        border-color: variaveis.$corDeFundoBotaoSecundario;
+        background-color: red;
+        border-color: black;
 
         &:hover {
             background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
@@ -143,11 +143,11 @@ body {
     align-items: center;
 
     @media (max-width: 768px) {
-        display: block;
+        display: block;;
     }
 
     img {
-        max-width: 100%;
+        width: 100%;
     }
 
     &__text_container {
@@ -178,8 +178,8 @@ body {
 
             @media (max-width: 768px) {
                 position: relative;
-                left: 0;
                 width: 100%;
+                left: 0;
             }
         }
     }
