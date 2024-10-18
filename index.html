@@ -1,116 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu filme favorito</title>
+    <title>Os Vingadores</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
-
 <body>
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="./dist/images/favicon.ico" alt="Disney+">
+                <img class="header__logo" src="./dist/images/marvel--logo.png" alt="Marvel">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assista agora</a>
+                    <a href="#" class="button button--secondary">Assine agora</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#sobre" class="button button--dark">Sobre</a>
+                    <a href="#" class="button button--dark">Entrar</a>
                 </li>
             </ul>
         </div>
     </header>
-
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
+                <img src="./dist/images/marvel--logo.png" alt="Marvel">
             </div>
-        </div>
-    </section>
-
-    <section class="shows" id="sobre">
-        <div class="shows__container">
-            <h1>Homem de Ferro 1</h1>
+            <h3 class="title--small">
+                As melhores histórias em um só lugar.
+            </h3>
             <p>
-                Homem de Ferro é o filme que deu início ao Universo Cinematográfico da Marvel (MCU), dirigido por Jon Favreau e estrelado por Robert Downey Jr. como Tony Stark, um bilionário, gênio da tecnologia e playboy carismático. A trama segue a jornada de transformação pessoal de Stark, que começa como um empresário arrogante e indiferente aos impactos de sua empresa, a Stark Industries, fabricante de armas, até sua eventual redenção como o super-herói Homem de Ferro.
+                <a href="#" class="link-text">Assine agora e veja todos os filmes da saga dos vingadores.</a>
                 <br>
-                <br>
-                A história começa com Tony Stark sendo sequestrado por um grupo terrorista no Afeganistão, após demonstrar a eficácia de suas novas armas de destruição em massa. Gravemente ferido no ataque, Stark é mantido prisioneiro e forçado a construir um míssil para seus captores. No entanto, em segredo, ele cria uma armadura improvisada para escapar, com a ajuda de Yinsen, um prisioneiro que o ajuda a sobreviver e o inspira a mudar sua vida. Essa experiência traumática faz com que Stark questione sua responsabilidade na criação de armas.
-                <br>
-                <br>
-                Após retornar aos Estados Unidos, Tony decide parar de fabricar armas, o que causa conflitos dentro de sua empresa, especialmente com seu sócio e mentor, Obadiah Stane (Jeff Bridges), que secretamente tem planos para tomar o controle da Stark Industries. Em segredo, Stark começa a trabalhar em uma nova e avançada versão da armadura, mais tecnológica e poderosa, que lhe permite voar e combater inimigos de maneira eficaz. Esse traje se torna o famoso uniforme do Homem de Ferro.
+                <span class="text">
+                    R$ 39,90/mês o R$ 139,90/ano à vista*
+                </span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <button class="button">Plano Mensal</button>
+                    <span class="text">R$ 39,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <button class="button">Plano Anual</button>
+                    <span class="text">R$ 139,90/anual*</span>
+                </li>
+            </ul>
+            <p class="text--small">
+                *Preço promocional por tempo limitado, agora por apenas R$ 19,90/mês.
             </p>
         </div>
     </section>
-
-    <section class="plans">
-        <h2 class="tittle--big">Assine Disney+ para assistir este filme e muito mais!</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
-                <p class="text--big">
-                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicas inesquecíveis.
-                </p>
-                <button class="button">Assine agora</button>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="Fase_1" class="shows__tabs__button shows__tabs__button--is-active">
+                Fase 1
+            </button>
+            <button data-tab-button="Fase_2" class="shows__tabs__button">
+                Fase 2
+            </button>
+            <button data-tab-button="Fase_3" class="shows__tabs__button">
+                Fase 3
+            </button>
+        </nav>
+        <ul data-tab-id="Fase_1" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/iron man.webp" alt="Spidey" >
             </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
-                <p class="text--big">
-                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
-                </p>
-                <button class="button">Assine agora</button>
+            <li class="shows__list__item">
+                <img src="./dist/images/iron man 2.webp" alt="Spidey">
             </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
-                <p class="text--big">
-                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
-                </p>
-                <button class="button">Assine agora</button>
+            <li class="shows__list__item">
+                <img src="./dist/images/thor 1.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/capitã marvel.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/capitao américa.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/avengers 1.webp" alt="Spidey">
             </li>
         </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
+        <ul data-tab-id="Fase_2" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/iron man 3.webp" alt="Obi Wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/thor 1.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/capitao américa 2.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/galaxia1.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/galaxia2.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/avengers 2.webp" alt="Spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="Fase_3" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/homem-formiga.webp" alt="Libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/guerra-civil.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/pantera-negra.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/doutor-estranho.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/thor-ragnarok.webp" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/guerra-infinita.webp" alt="Spidey">
+            </li>
+        </ul>
     </section>
-
     <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV e outros">
+        <img src="./dist/images/vingadores-colecao.webp" alt="Vingadores coleção">
         <div class="image-text-section__text_container">
-            <h2 class="title">
-                Assista do seu jeito
-            </h2>
+            <h2 class="title">Assista a coleção de filmes da saga vingadores</h2>
             <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                Aproveite essa coleção de filmes e assita como quiser, podendo assistir em ordem cronológica ou em ordem de lançamentos dos filmes.
             </p>
         </div>
     </section>
-
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
-            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
-        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
-            <h2 class="title">
-                Baixe filmes e séries
-            </h2>
-            <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
-            </p>
-        </div>
-    </section>
-
     <section class="available-devices">
-        <h2 class="title">
-            Disponível nos seus dispositivos favoritos
-        </h2>
+        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
         <ul class="available-devices__list">
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/computador.png" alt="Computador">
@@ -156,13 +182,12 @@
             </li>
         </ul>
     </section>
-
     <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    Como saber a ordem cronológica dos filmes?
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     Resposta
@@ -170,18 +195,18 @@
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    Como saber se a promoção ainda está ativa?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta
+                    A resposta da pergunta
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    Quais as formas que posso utilizar para efetuar o pagamento do site?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta
+                    A resposta da pergunta
                 </div>
             </li>
         </ul>
@@ -189,7 +214,7 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Logo">
+            <img class="footer__logo" src="./dist/images/marvel--logo.png" alt="Marvel">
             <ul class="footer__links">
                 <li class="footer__links__item">
                     <div class="language-selector">
@@ -221,17 +246,19 @@
                     <a href="#" class="text--small">Ajuda</a>
                 </li>
                 <li class="footer__links__item">
-                    <a href="" class="text--small">Sobre o Disney+</a>
+                    <a href="" class="text--small">Sobre os Vingadores</a>
                 </li>
             </ul>
             <p class="text--small">
-                ® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+                ® 2024 Disney, Os Vingadores e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
             </p>
             <p class="text--small">
-                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                Os Vingadores é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Os Vingadores é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
             </p>
         </div>
     </footer>
+
+    
 
     <script src="./dist/js/main.js"></script>
 </body>
